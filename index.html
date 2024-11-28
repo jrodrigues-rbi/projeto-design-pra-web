@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>TecnoBlog - Página Inicial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+        .hero-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .category-tab .nav-link.active {
+            font-weight: bold;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">TecnoBlog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Página Inicial</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre_nos.html">Sobre Nós</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card border-0">
+                        <img src="imgs/backend.jpeg" class="card-img-top" alt="Programação">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Tecnologia</span>
+                            <h2 class="hero-title">Por que aprender programação?</h2>
+                            <p class="text-muted"><small>Atualizado em 2024</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-light p-3 rounded">
+                        <h5 class="mb-3">Artigos Recomendados</h5>
+                        <div class="d-flex mb-3">
+                            <img src="imgs/python.png" class="rounded me-3" style="width: 70px; height: 70px;" alt="Python">
+                            <div>
+                                <h6 class="mb-1">O que é Python?</h6>
+                                <p class="text-muted"><small>Visualizações: 200k</small></p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <img src="imgs/nodejs.png" class="rounded me-3" style="width: 70px; height: 70px;" alt="Node.js">
+                            <div>
+                                <h6 class="mb-1">O que é Node.js?</h6>
+                                <p class="text-muted"><small>Visualizações: 150k</small></p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-outline-primary w-100">Ver Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mt-5">
+        <h4 class="fw-bold">Últimos Artigos</h4>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/python.png" class="card-img-top" alt="Python">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">O que é Python?</h5>
+                        <a href="artigos/python.html" class="btn btn-primary">Ler mais...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/nodejs.png" class="card-img-top" alt="Node.js">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">O que é Node.js?</h5>
+                        <a href="artigos/node.html" class="btn btn-primary">Ler mais...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/backend.jpeg" class="card-img-top" alt="Desenvolvedor BackEnd">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Currículo Desenvolvedor BackEnd</h5>
+                        <a href="curriculo.html" class="btn btn-primary">Ler mais...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/programacao.png" class="card-img-top" alt="Programação">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">O que é Programação?</h5>
+                        <a href="artigos/programacao.html" class="btn btn-primary">Ler mais...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">© 2024 TecnoBlog - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/bootstrap.js"></script>
+</body>
+</html>
